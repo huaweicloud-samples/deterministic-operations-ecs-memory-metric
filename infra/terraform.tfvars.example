@@ -1,0 +1,16 @@
+# 华为云凭据（AK/SK）请勿写入本文件，由部署方在运行时通过环境变量提供：
+#   示例：export HW_ACCESS_KEY="<AK>"
+#         export HW_SECRET_KEY="<SK>"
+#
+# 以下为本实践可配置变量示例，按需修改后复制为 terraform.tfvars 使用。
+
+region               = "cn-north-4"
+project_name         = "ecs-memory-metric"
+admin_cidr           = "0.0.0.0/0"
+vpc_cidr             = "10.0.0.0/16"
+ecs_flavor           = "s6.large.2"
+image_name           = "Ubuntu 22.04 server 64bit"
+agent_install_region = "cn-north-4"
+
+# 建议优先填写 SSH 公钥（留空则仅使用口令登录）
+ssh_public_key = ""
